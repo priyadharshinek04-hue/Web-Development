@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff8f0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff66b2;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1589308078054-8323c16dcd4a') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  color: #fffacd;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Flavors */
+.flavors {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff0f5;
+}
+
+.flavors h2 {
+  font-size: 34px;
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+.flavor-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 220px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Pricing */
+.pricing {
+  background: #e6ffe6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 34px;
+  color: #28a745;
+  margin-bottom: 30px;
+}
+
+.price-table {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.price-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.price-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 26px;
+  color: #ff1493;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
